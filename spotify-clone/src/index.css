@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* For WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Internet Explorer & Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}
+#note {
+  width: 500px;
+  overflow: hidden;
+}
+
+#note small {
+  position: relative;
+  display: inline-block;
+  animation: mymove 5s infinite;
+  animation-timing-function: all;
+}
+
+
